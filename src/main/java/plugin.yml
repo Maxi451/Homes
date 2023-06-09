@@ -1,0 +1,33 @@
+name: Homes
+version: 1.0.0
+main: it.tristana.homes.Main
+author: Massimiliano Micol
+api-version: 1.20
+description: Homes plugin
+depend: [TristanaCommons]
+commands:
+  home:
+    description: Go to a home
+    usage: Type /home [home]
+    permission: homes.player
+    default: true
+  sethome:
+    description: Sets a new home
+    usage: Type /sethome [name]
+    permission: homes.player
+    default: true
+  delhome:
+    description: Removes a home
+    usage: Type /delhome [name]
+    permission: homes.player
+    default: true
+  homes:
+    description: List the homes
+    usage: Type /homes
+    permission: homes.player
+    default: true
+  adminhome:
+    description: Admin command
+    usage: Type /adminhome help
+    permission: homes.admin
+    default: op
